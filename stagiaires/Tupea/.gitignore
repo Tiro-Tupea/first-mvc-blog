@@ -1,0 +1,5 @@
+# dossier data
+/data
+
+# données sensibles 
+config.php

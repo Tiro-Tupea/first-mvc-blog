@@ -30,7 +30,7 @@ select `id`, `title` from `article`;
 
 # Affichez les champs `id`, `title`, de la table `article` ainsi que le `username` venant de la table `user` (jointure interne donc obligatoire)
 
-select `article`.`id`,`article`.`title`, `user`.`username    n `
+select `article`.`id`,`article`.`title`, `user`.`username   `
 	 from `article`
      join `user`
 		on `user`.`id` = `article`.`user_id`
