@@ -9,6 +9,7 @@ session_start();
 
 // chargement des dépendances
 require_once "../config.php";
+
 // chargement des modèles
 require_once BASE_URL."/model/CategoryModel.php";
 require_once BASE_URL."/model/ArticleModel.php";

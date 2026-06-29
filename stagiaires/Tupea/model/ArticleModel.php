@@ -14,7 +14,7 @@
 function selectAllArticleHomepage(PDO $db): array 
 {
     $sql = "SELECT 
-	a.`id`, a.`title`,a.`date`, LEFT(a.`content`,250) AS `content` ,
+	a.`id`, a.`titile`,a.`date`, LEFT(a.`content`,250) AS `content` ,
     u.`id` AS `iduser`, u.`username`
 	FROM `article` a
     INNER JOIN `user` u

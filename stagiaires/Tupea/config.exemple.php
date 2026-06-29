@@ -2,11 +2,11 @@
 
 // creation des constantes de connexion
 
+const DB_TYPE = "mysql";
 const DB_HOST = "localhost";
 const DB_PORT = 3306;
-const DB_NAME = "first";
+const DB_NAME = "firsttupea";
 const DB_CHARSET = "utf8";
-const DB_TYPE = "mysql";
 const DB_LOGIN = "root";
 const DB_PWD = "";
 

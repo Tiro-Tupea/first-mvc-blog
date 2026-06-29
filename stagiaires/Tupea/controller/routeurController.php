@@ -8,24 +8,26 @@
  * On va se connecter
  * à notre DB via PDO
  */
-try{
+ 
+try {
     $dbConnect = new PDO(
-        dsn:DB_DSN,
-        username:DB_LOGIN,
-        password:DB_PWD,
-        options:[
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+    dsn:DB_DSN,
+    username:DB_LOGIN,
+    password:DB_PWD,
+    options:[
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
         ]
+
     );
-}catch(Exception $e){
+}catch(Exception $e) {
     die($e->getMessage());
 }
+
 
 /**
  * Route
  */
-
 // On charge les catégories pour les pages publiques
 $menu = selectAllCategoryMenu($dbConnect); // model
 
@@ -36,7 +38,6 @@ $menu = selectAllCategoryMenu($dbConnect); // model
 // ICI
 $articles = selectAllArticleHomepage($dbConnect);
 include_once BASE_URL."/view/homepage.view.html.php";
-//var_dump($dbConnect);
-$dbConnect = null;
 
 // var_dump($dbconnect);
+$dbConnect = null;
