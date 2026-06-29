@@ -35,4 +35,4 @@ try {
 
 
 include_once BASE_URL."/view/homepage.view.html.php";
-var_dump($dbconnect);
+// var_dump($dbconnect);
